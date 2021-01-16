@@ -13,36 +13,47 @@
 
 <body>
     <header>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #4682B4;">
+        <!-- Barra de navegação -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #4683b46c;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="imagens/logo.png" width="70" height="70" class="align-center" alt="">
+                    <img src="imagens/logo.png" width="70" height="70" class="rounded" alt="">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 h5">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active " aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link " href="#">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cadastro</a>
+                            <a class="nav-link " href="#">Cadastro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Desativado</a>
                         </li>
                     </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                    </form>
                 </div>
             </div>
         </nav>
-
+        <!-- Fim da barra de navegação -->
     </header>
+
+    <main>
+
+    </main>
+
     <br>
     <img src="imagens/logo.png" class="img-fluid rounded mx-auto d-block" style="width: 500px;" alt="AJS Logo">
 
