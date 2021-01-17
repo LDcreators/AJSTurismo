@@ -1,15 +1,11 @@
 /* Slider */
 
-#slide .container-fluid2 {
-    padding: 0;
-}
-
 #carouselExampleCaptions .carousel-inner,
 #carouselExampleCaptions .carousel-item {
-    height: 70vh;
-
+    height: 40vh;
+    
 }
 
 #carouselExampleCaptions .carousel-caption {
-    top: 40%;
+top: 35%;
 }
