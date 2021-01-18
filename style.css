@@ -3,9 +3,8 @@
 #carouselExampleCaptions .carousel-inner,
 #carouselExampleCaptions .carousel-item {
     height: 40vh;
-    
 }
 
 #carouselExampleCaptions .carousel-caption {
-top: 35%;
+    top: 35%;
 }
