@@ -8,3 +8,7 @@
 #carouselExampleCaptions .carousel-caption {
     top: 53%;
 }
+
+#btnpesquisar .btn-outline-success {
+    color: white;
+}
