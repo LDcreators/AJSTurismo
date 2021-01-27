@@ -17,3 +17,12 @@
 .carousel-indicators li.active {
     margin: 0px 7px !important;
 }
+
+.menuFixo {
+    position: fixed;
+    top: 0px;
+    background-color: #464646b4;
+  }
+  .btn-outline-success{
+      color: black !important;
+  }
