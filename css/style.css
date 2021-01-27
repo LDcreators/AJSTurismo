@@ -6,7 +6,7 @@
 }
 
 #carouselExampleCaptions .carousel-caption {
-    top: 65%;
+    top: 60%;
 }
 
 #btnpesquisar .btn-outline-success {
@@ -22,7 +22,4 @@
     position: fixed;
     top: 0px;
     background-color: #464646b4;
-  }
-  .btn-outline-success{
-      color: black !important;
-  }
+}
