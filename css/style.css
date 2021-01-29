@@ -15,8 +15,12 @@
 
 .carousel-indicators li,
 .carousel-indicators li.active {
-    margin: 0px 7px !important;
+    /* margin: 0px 7px !important; */
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
 }
+
 
 .menuFixo {
     position: fixed;

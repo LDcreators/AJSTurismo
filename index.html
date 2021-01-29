@@ -14,6 +14,44 @@
 
 <body>
     <header>
+          <!--    modal  -->
+    
+          <div class="modal fade" id="ContatoModal" tabindex="-1" aria-labelledby="ContatoModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="Nome" class="col-form-label">Nome:</label>
+                          <input type="text" class="form-control item" id="Nome"  placeholder="Nome Completo" required="Preencher">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="col-form-label">Telefone:</label>
+                            <input type="text" class="form-control item" id="phone-number" placeholder="Telefone para Contato" required="Preencher">
+                        </div> 
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">Email</label>
+                            <input type="email" name="email" id="email" class="form-control item" placeholder="email@exemplo.com.br" required="Preencher">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text" placeholder="Deixe um comentario se quiser!"></textarea>
+                          </div>
+                        
+                      </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
         <!-- Barra de navegação -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="menu">
             <div class="container">
@@ -31,8 +69,9 @@
                             <a class="nav-link active " aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Contato</a>
+                            <a class="nav-link " href="#"  data-bs-toggle="modal" data-bs-target="#ContatoModal">Contato</a>
                         </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link " href="#">Cadastro</a>
                         </li>
@@ -45,7 +84,10 @@
                         <button id="btnpesquisar" class="btn btn-secondary" style="color: white; " type="submit">Pesquisar</button>
                     </form>
                 </div>
+                
             </div>
+
+          
         </nav>
 
         <!-- Fim da barra de navegação -->
@@ -296,7 +338,7 @@
 
     <hr class="my-4">
     <!-- Inicio dos creditos/redes sociais -->
-    <footer class="bg-light text-center text-lg-start">
+    <footer class="bg-light text-center text-md-start">
         <div class="container p-4">
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -338,10 +380,12 @@
     </footer>
 
     <!-- Scripts -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-    </script>
+<!-- boostrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">//boostrap</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js">//Jquery</script>
+    <!-- onde fica nossos script da home -->
     <script src="script/script.js"></script>
     <!-- Fim dos Scripts -->
 </body>

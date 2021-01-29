@@ -6,3 +6,9 @@
         else menu.classList.remove('menuFixo');
     });
 })();
+
+//mascarar os input. funciona somente com jQuery
+$(document).ready(function(){
+    $('#phone-number').mask('(00) 00000-0000');
+   
+  });
