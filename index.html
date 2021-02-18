@@ -14,112 +14,10 @@
 
 <body>
     <header>
-        <!--    modal  Contato-->
 
-        <div class="modal fade" id="ContatoModal" tabindex="-1" aria-labelledby="ContatoModal" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="Nome" class="col-form-label">Nome:</label>
-                                <input type="text" class="form-control item" id="Nome" placeholder="Nome Completo" required="Preencher">
-                            </div>
-                            <div class="mb-3">
-                                <label for="telefone" class="col-form-label">Telefone:</label>
-                                <input type="text" class="form-control item" id="phone-number" placeholder="Telefone para Contato" required="Preencher">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="col-form-label">Email</label>
-                                <input type="email" name="email" id="email" class="form-control item" placeholder="email@exemplo.com.br" required="Preencher">
-                            </div>
-                            <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="message-text" placeholder="Deixe um comentario se quiser!"></textarea>
-                            </div>
-
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-primary">Enviar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--    modal viagens  -->
-
-        <div class="modal fade" id="ViagensModal" tabindex="-1" aria-labelledby="ViagensModal" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Viagens</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-                        <div class="row">
-                            <div class="col d-flex justify-content-center">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="imagens/viagens/BetoCarrero.jpg" class="card-img-top" alt="..." width="180" height="180">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Beto Carreiro</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col d-flex justify-content-center">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="imagens/viagens/BetoCarrero.jpg" class="card-img-top" alt="..." width="180" height="180">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Beto Carreiro</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col d-flex justify-content-center">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="imagens/viagens/BetoCarrero.jpg" class="card-img-top" alt="..." width="180" height="180">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Beto Carreiro</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col d-flex justify-content-center">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="imagens/viagens/BetoCarrero.jpg" class="card-img-top" alt="..." width="180" height="180">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Beto Carreiro</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-primary">Enviar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Barra de navegação -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="menu">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark menuFixo" id="menu">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="imagens/logo/logo.png" width="60" height="60" class="rounded" alt="">
@@ -141,13 +39,11 @@
                         <li class="nav-item">
                             <a class="nav-link " href="#" data-bs-toggle="modal" data-bs-target="#ViagensModal">Viagens</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Desativado</a>
-                        </li>
+
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                        <button id="btnpesquisar" class="btn btn-secondary" style="color: white; " type="submit">Pesquisar</button>
+                        <button id="btnpesquisar" class="btn btn-secondary" type="submit">Pesquisar</button>
                     </form>
                 </div>
 
@@ -157,6 +53,183 @@
         </nav>
 
         <!-- Fim da barra de navegação -->
+
+        <!--    modal  Contato-->
+
+        <div class="modal fade" id="ContatoModal" tabindex="-1" aria-labelledby="ContatoModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="Nome" class="col-form-label">Nome:</label>
+                                <input type="text" class="form-control item" id="Nome" placeholder="Nome Completo" required="Preencher">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="col-form-label">Telefone:</label>
+                                <input type="text" class="form-control item" id="phone-number" placeholder="Telefone para Contato" required="Preencher">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label">Email:</label>
+                                <input type="email" name="email" id="email" class="form-control item" placeholder="email@exemplo.com.br" required="Preencher">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Mensagem:</label>
+                                <textarea class="form-control" id="message-text" placeholder="Deixe um comentario se quiser!"></textarea>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--    modal viagens  -->
+
+        <div class="modal fade" id="ViagensModal" tabindex="-1" aria-labelledby="ViagensModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Viagens</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="col d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="imagens/viagens/BetoCarrero.jpg" class="card-img-top" alt="..." width="180" height="180">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beto Carreiro</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="col d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="imagens/viagens/BetoCarrero.jpg" class="card-img-top" alt="..." width="180" height="180">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beto Carreiro</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="col d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="imagens/viagens/BetoCarrero.jpg" class="card-img-top" alt="..." width="180" height="180">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beto Carreiro</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="col d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="imagens/viagens/BetoCarrero.jpg" class="card-img-top" alt="..." width="180" height="180">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beto Carreiro</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="col d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="imagens/viagens/BetoCarrero.jpg" class="card-img-top" alt="..." width="180" height="180">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beto Carreiro</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="col d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="imagens/viagens/BetoCarrero.jpg" class="card-img-top" alt="..." width="180" height="180">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beto Carreiro</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="col d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="imagens/viagens/BetoCarrero.jpg" class="card-img-top" alt="..." width="180" height="180">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beto Carreiro</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-4">
+                                <div class="col d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="imagens/viagens/BetoCarrero.jpg" class="card-img-top" alt="..." width="180" height="180">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beto Carreiro</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <div class="col d-flex justify-content-center">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="imagens/viagens/BetoCarrero.jpg" class="card-img-top" alt="..." width="180" height="180">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Beto Carreiro</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -176,7 +249,7 @@
                     <div class="carousel-item active" data-bs-interval="5000">
                         <img src="imagens/Foz.jpg" class="image-fluid" alt="primeiro slide">
                         <div class="carousel-caption">
-                            <h5>Encontre sua Vigem</h5>
+                            <h5>Encontre sua Viagem</h5>
                             <p>Conheça uma das maravilhas do mundo!</p>
                         </div>
                     </div>
@@ -212,7 +285,7 @@
         <!-- jumbotron, os textos que vem logo depois do carrosel-->
         <div class="jumbotron jumbotron-fluid">
             <div class="container"><br>
-                <p class="display-4">Encontre as melhores viagens</p>
+                <p class="display-4">Encontre os melhores destinos</p>
                 <hr class="my-4">
                 <p class="lead">Nós oferecemos a você viagens inesqueciveis com a sua familia e amigos. Dê uma olhada!
                 </p>
@@ -439,8 +512,8 @@
         </div>
         <!-- Copyright -->
         <div class="text-center p-0" style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2021 Copyright:
-            <a class="text-dark" href="#">Podz Dev</a>
+            © 2021
+            <a class="text-dark" href="#">Poduz</a>
         </div>
         <!-- Copyright -->
         <!-- Fim dos creditos/redes sociais -->
